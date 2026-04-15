@@ -7,7 +7,7 @@ public:
     for (int i = 0; i < n; i++) {
         if (words[i] == target) {
             int diff = abs(i - startIndex);
-            int dist = min(diff, n - diff);  // circular distance
+            int dist = min(diff, n - diff);  
             minDist = min(minDist, dist);
         }
     }
